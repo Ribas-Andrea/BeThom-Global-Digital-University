@@ -96,3 +96,58 @@ h2 {
 .article-description {
   font-size: 16px;
 }
+
+#projets {
+  width: 1200px;
+  margin: auto;
+}
+
+.projet {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.projet-image {
+  max-width: 150px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.bloc-image {
+  padding-right: 25px;
+}
+
+.projet-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.date-type {
+  display: flex;
+  gap: 25px;
+}
+
+.projet-date {
+  background-color: #142850;
+  border-radius: 16px;
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  width: 62px;
+  height: 25px;
+  text-align: center;
+}
+
+.projet-type {
+  color: #8695a4;
+  font-size: 20px;
+}
+
+.projet-description {
+  font-size: 16px;
+}
