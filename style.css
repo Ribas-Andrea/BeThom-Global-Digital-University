@@ -1,12 +1,16 @@
-h1 {
-  color: red;
-  font-size: 40px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.paragraphe1 {
-  color: blue;
+#nav-links {
+  display: flex;
+  gap: 65px;
 }
 
-#paragraphe2 {
-  color: green;
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
 }
