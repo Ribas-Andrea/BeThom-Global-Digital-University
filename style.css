@@ -1,8 +1,12 @@
+/* --------------------Générale------------------*/
+
 body {
   font-family: "Heebo", sans-serif;
   margin: 0;
   color: #21243d;
 }
+
+/* --------------------Navigation------------------ */
 
 nav {
   display: flex;
@@ -24,6 +28,7 @@ nav {
   font-size: 20px;
 }
 
+/* --------------------Header------------------ */
 header {
   display: flex;
   justify-content: space-between;
@@ -55,6 +60,7 @@ h1 {
   width: 630px;
 }
 
+/* --------------------Blog------------------ */
 #blog {
   background-color: #edf7fa;
   padding-bottom: 35px;
@@ -97,6 +103,7 @@ h2 {
   font-size: 16px;
 }
 
+/* --------------------Projets------------------ */
 #projets {
   width: 1200px;
   margin: auto;
@@ -150,4 +157,95 @@ h2 {
 
 .projet-description {
   font-size: 16px;
+}
+
+/* --------------------Contact------------------ */
+
+#contact {
+  width: 1200px;
+  margin: auto;
+}
+
+#contact-content {
+  display: flex;
+  gap: 40px;
+}
+
+#coordonnees {
+  flex: 1;
+}
+
+/* Partie de gauche du contact */
+
+.contact-title {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+#contact-intro {
+  font-size: 20px;
+}
+
+#email {
+  font-size: 16px;
+}
+
+.socials-links {
+  font-size: 16px;
+  color: black;
+}
+
+/* Partie de droite du contact */
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  background-color: #f7f7f7;
+  border: none;
+  height: 46px;
+}
+
+textarea#message {
+  height: 160px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 56px;
+}
+/* --------------------Footer------------------*/
+
+footer {
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#icon-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#icon-socials img {
+  width: 30px;
+  height: 30px;
+}
+
+#copyright {
+  font-size: 14px;
+  color: #212430;
 }
