@@ -12,7 +12,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; /* permet de inclure le padding dans la largeur totale */
   margin: auto;
 }
 
@@ -32,7 +35,10 @@ nav {
 header {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
   margin: 75px auto;
 }
 
@@ -67,8 +73,11 @@ h1 {
 }
 
 #blog-content {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -86,6 +95,7 @@ h2 {
   background-color: white;
   border-radius: 4px;
   width: 543px;
+  max-width: 48%;
   padding: 10px 20px;
   box-sizing: border-box; /* la taille de l'élément comprend la padding */
 }
@@ -105,8 +115,11 @@ h2 {
 
 /* --------------------Projets------------------ */
 #projets {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .projet {
@@ -162,8 +175,11 @@ h2 {
 /* --------------------Contact------------------ */
 
 #contact {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 #contact-content {
@@ -248,4 +264,35 @@ footer {
 #copyright {
   font-size: 14px;
   color: #212430;
+}
+
+/* ---------------Responsive --------------- */
+
+@media (max-width: 700px) {
+  #articles {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .article-blog {
+    max-width: none;
+    width: 100%;
+  }
+
+  .date-categorie {
+    gap: 5px;
+  }
+
+  #coordonnees {
+    display: none;
+  }
+
+  .projet {
+    flex-direction: column;
+  }
+
+  .projet-image {
+    max-width: none;
+    width: 100%;
+  }
 }
